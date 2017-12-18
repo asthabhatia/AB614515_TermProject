@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AB614515_TermProject">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="hk2-locator-2.5.0-b42.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hk2-locator-2.5.0-b42/hk2-locator-2.5.0-b42">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-hk2-2.26.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-hk2-2.26/jersey-hk2-2.26">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-utils-2.5.0-b42.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hk2-utils-2.5.0-b42/hk2-utils-2.5.0-b42">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-common-2.26.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-common-2.26/jersey-common-2.26">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.9.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jackson-databind-2.9.2/jackson-databind-2.9.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client-2.26.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jersey-client-2.26/jersey-client-2.26">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-2.5.0-b42.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.inject-2.5.0-b42/javax.inject-2.5.0-b42">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.json-1.0.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.json-1.0.4/javax.json-1.0.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-annotations-2.9.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jackson-annotations-2.9.0/jackson-annotations-2.9.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.26-bin.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mysql-connector-java-5.1.26-bin/mysql-connector-java-5.1.26-bin">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.22.0-CR2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javassist-3.22.0-CR2/javassist-3.22.0-CR2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation-api-1.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.annotation-api-1.2/javax.annotation-api-1.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="osgi-resource-locator-1.0.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/osgi-resource-locator-1.0.1/osgi-resource-locator-1.0.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-repackaged-2.5.0-b42.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/aopalliance-repackaged-2.5.0-b42/aopalliance-repackaged-2.5.0-b42">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.inject-1/javax.inject-1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-api-2.5.0-b42.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/hk2-api-2.5.0-b42/hk2-api-2.5.0-b42">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.faces-2.2.8.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.faces-2.2.8/javax.faces-2.2.8">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ws.rs-api-2.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/javax.ws.rs-api-2.1/javax.ws.rs-api-2.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-2.9.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jackson-core-2.9.2/jackson-core-2.9.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="AB614515_TermProject"/>
+        <property name="java-output-path" value="/AB614515_TermProject/build/classes"/>
+    </wb-module>
+</project-modules>

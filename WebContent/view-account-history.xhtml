@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+	
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Account History</title>
+
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+
+<h:body>
+
+
+<ui:include src="/WEB-INF/header.xhtml" />
+<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-12" style="margin-left: 20px;">
+			
+<h2><h:outputText value="Account History"></h:outputText></h2>  
+<h:dataTable value="#{stockOrders}" var="orders" border="2">  
+<h:column>  
+<c:facet name="header">Order Id</c:facet>  
+<h:outputText value="#{orders.getStock_symbol}"/>  
+</h:column>  
+<h:column>  
+        <c:facet name="header">Stock</c:facet>  
+        <h:outputText value="#{orders.stock_symbol}"/>  
+</h:column>  
+<h:column>  
+        <c:facet name="header">Price</c:facet>  
+<h:outputText value="#{orders.stock_price}"/>  
+</h:column>  
+
+
+<h:column>  
+        <c:facet name="header">Quantity</c:facet>  
+<h:outputText value="#{orders.stock_qty}"/>  
+</h:column>  
+
+
+<h:column>  
+        <c:facet name="header">Amount</c:facet>  
+<h:outputText value="#{orders.amount}"/>  
+</h:column>  
+
+<h:column>  
+        <c:facet name="header">BUY/SELL</c:facet>  
+<h:outputText value="#{orders.orderType}"/>  
+</h:column>  
+
+    </h:dataTable>
+
+</div>
+
+</div>
+</h:body>
+</html>

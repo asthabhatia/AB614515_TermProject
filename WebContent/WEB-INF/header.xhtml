@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<h:outputStylesheet library="css" name="style.css" />
+	<h:outputScript library="js" name="jquery.min.js" />
+    <h:outputScript library="js" name="common.js" />
+</h:head>
+<h:body>
+
+
+	<div class="container">
+
+		<h:form>
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-12">
+				
+				<div class="col-md-6 col-sm-4 col-lg-4" style="color: white;">
+				Welcome<h:outputLabel value="#{registerBean.firstname}">
+					</h:outputLabel></div>
+					
+					<div class="col-md-4 col-sm-6 col-lg-4" style="text-align: center; text-decoration:none; color: white; !important; margin:0px !important; ">
+					<h:link value="UpdateProfile" outcome="update-profile"  style="text-align: center; text-decoration:none; color: white; !important; " /> </div>	
+					
+						
+						
+					<div class="col-md-4 col-sm-6 col-lg-4" style="text-align: right; text-decoration:none; color: white; !important; margin:0px !important; ">				 								
+					<h:link value="Logout" outcome="login"  style="text-align: right; text-decoration:none; color: white; !important; " /> 						
+					</div>
+					
+					</div>
+					<br/>
+					<div class="col-md-12 col-sm-12 col-lg-12">
+
+					<div class="col-md-3 col-sm-2 col-lg-3">
+						<h:link value="Select Stocks to watch" outcome="view-stockslist"
+							style="text-decoration: none; margin-right:10px !important; font-size: 15px;color:white;" />
+					</div>
+					
+					
+	 
+	
+					
+					<div class="col-md-3 col-sm-2 col-lg-3">
+					<h:link value="View Stocks History" outcome="view-stock-history"
+							style="text-decoration: none; margin-right:10px !important; font-size: 15px;color:white;" />
+					</div>
+
+					<div class="col-md-3 col-sm-2 col-lg-3">
+						<h:commandLink action="#{stock.viewAccountHistory}"
+							value="View Account History"
+							style="text-decoration: none; margin-right:10px !important; font-size: 15px;color:white;" />
+					</div>
+
+					<div class="col-md-3 col-sm-2 col-lg-3">
+						<h:link value="View Account Balance" outcome="view-account-balance"
+							style="text-decoration: none; margin-right:10px !important; font-size: 15px;color:white;" />
+					
+					</div>
+					
+					
+
+					
+				</div><br/><br/>
+				 <div class="col-md-12 col-sm-12 col-lg-12">
+				  <div class="col-md-6 col-sm-2 col-lg-6">
+					<h:commandButton value="My watch List" action="#{stock.myWatchList}" styleClass="btn btn-success" />
+						
+					</div>
+					<div class="col-md-6 col-sm-6 col-lg-6"
+						style="text-align: right; margin-right: 0px !important; color: #1095f1">
+
+					</div> </div>
+				
+			</div>
+
+		</h:form>
+
+	</div>
+
+<br/>
+
+</h:body>
+</html>

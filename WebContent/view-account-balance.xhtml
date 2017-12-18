@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Account Balance</title>
+
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+<h:body>
+
+	<div class="container">
+	
+		<h:form>
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-12">
+			
+
+					
+										
+					<ui:include src="/WEB-INF/header.xhtml" />
+					<div class="col-md-6 col-sm-6 col-lg-6" style="color: white;"><h3>
+					
+                    Account Balance: $<h:outputText value="#{balance}" />    </h3>        	                      
+ 		
+					</div>
+					
+				
+
+				</div>
+			</div>
+		</h:form>
+	</div>
+	
+
+
+</h:body>
+</html>

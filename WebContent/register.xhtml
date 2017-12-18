@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Login</title>
+
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+
+
+<h:body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well login-box">
+
+					<h:form id="registerForm">
+						<legend>Registeration</legend>
+						
+						<div class="form-group">
+
+							<h:outputLabel value="Role" />
+
+							<h:selectOneRadio value="#{registerBean.role}">					
+							  <c:selectItem itemValue="user" itemLabel="USER" />
+							  <c:selectItem itemValue="manager" itemLabel="MANAGER" />
+							</h:selectOneRadio>
+						</div>
+						
+						<div class="form-group">
+
+							<h:outputLabel for="firstname" value="First Name " />
+
+
+							<h:inputText id="firstname" value="#{registerBean.firstname}"
+								required="true" requiredMessage="First Name is required"
+								p:placeholder="First Name" styleClass="form-control" />
+
+							<h:message for="firstname" style="color:red" />
+						</div>
+
+
+						<br />
+
+
+						<div class="form-group">
+							<h:outputLabel for="lastname" value="Last Name " />
+
+
+							<h:inputText id="lastname" value="#{registerBean.lastname}"
+								required="true" requiredMessage="Last Name is required"
+								p:placeholder="Last Name" styleClass="form-control" />
+
+							<h:message for="lastname" style="color:red" />
+						</div>
+						<br />
+
+
+						<div class="form-group">
+							<h:outputLabel for="address" value="Address " />
+
+
+							<h:inputText id="address" value="#{registerBean.address}"
+								required="true" requiredMessage="Address is required"
+								p:placeholder="P.O Box 123" styleClass="form-control" />
+
+							<h:message for="address" style="color:red" />
+						</div>
+						<br />
+
+
+						<div class="form-group">
+							<h:outputLabel for="phonenumber" value="Phone Number " />
+
+
+							<h:inputText id="phonenumber"
+								validator="#{registerationValidator.numberValidate}"
+								value="#{registerBean.phonenumber}" required="true"
+								requiredMessage="Phone number is required"
+								p:placeholder="9999999999" styleClass="form-control">
+								<c:validator validatorId="registerationValidator" />
+							</h:inputText>
+							<h:message for="phonenumber" style="color:red" />
+						</div>
+						<br />
+
+
+						<div class="form-group">
+							<h:outputLabel for="email" value="Personal Email " />
+
+
+							<h:inputText id="email"
+								validator="#{registerationValidator.emailValidate}"
+								value="#{registerBean.email}" required="true"
+								requiredMessage="Email address is required"
+								p:placeholder="abc@example.com" styleClass="form-control">
+								<c:validator validatorId="registerationValidator" />
+							</h:inputText>
+							<h:message for="email" style="color:red" />
+						</div>
+						<br />
+
+
+						<div class="form-group">
+							<h:outputLabel for="username" value="Username " />
+
+
+							<h:inputText id="username" value="#{registerBean.username}" validator="#{registerationValidator.usernameExistValidate}"
+								required="true" requiredMessage="Username is required" 
+								p:placeholder="Username" styleClass="form-control">
+								<c:validator validatorId="registerationValidator" />
+								</h:inputText>
+
+							<h:message for="username" style="color:red" />
+						</div>
+
+
+
+						<br />
+
+
+
+						<div class="form-group">
+							<h:outputLabel value="Password " />
+
+							<h:inputSecret id="password" value="#{registerBean.password}"
+								required="true" requiredMessage="Password is required"
+								p:placeholder="Password" styleClass="form-control" />
+
+							<h:message for="password" style="color: red;" />
+						</div>
+						<br />
+						
+					<div class="form-group">
+							<h:outputLabel for="fee" value="Fee " />
+							<h:inputText id="fee" value="#{registerBean.fee}"
+								required="true" requiredMessage="Fee is required"
+								p:placeholder="0.00" styleClass="form-control" />
+							<h:message for="fee" style="color:red" />
+						</div>
+
+
+						<div class="form-group text-center">
+							<h:commandButton value="Register"
+								action="#{registerBean.registerUserDetails}" />
+						</div>
+						<br />
+
+
+
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</h:body>
+</html>
